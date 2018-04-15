@@ -8,7 +8,7 @@ import UIKit
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
         let viewController = UIViewController()
-        viewController.view.backgroundColor = .black
+        viewController.view.backgroundColor = .purple
         return viewController
     }
 }

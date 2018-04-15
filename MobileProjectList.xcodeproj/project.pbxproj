@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		B4E3333C4D84174E63D071F0 /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DCC76DD0DBB76951477 /* MainWindowFactory.swift */; };
 		B4E3342ACAF85C93BAC6CE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E33B7532AD0F33B7E9D698 /* LaunchScreen.storyboard */; };
+		B4E334762D1EA84F32B6798D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EC1169276840D68D26D /* LoginViewController.swift */; };
+		B4E3368F09030555A2A90474 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337005C3FCE00761A9212 /* BaseViewController.swift */; };
+		B4E33A41F7837CD358A3B27F /* LoadingAlertScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E334AEC09F148AA7EC0130 /* LoadingAlertScreenFactory.swift */; };
 		B4E33A8F2440B791D5F77365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E337F8E3BF57347EB175C4 /* Assets.xcassets */; };
+		B4E33BD591717D8FB5A925D7 /* LoadingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BC1876ED95A135ABB9E /* LoadingPresenter.swift */; };
 		B4E33C586F7475768B19A1F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A9F4BE58461922E6931 /* AppDelegate.swift */; };
 		B4E33DC1E60B5C44BB3139F2 /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F956B38512546541D11 /* RootViewControllerFactory.swift */; };
+		B4E33E0D8D756E9AB262DE90 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B5DA15E1FDB0F3F36C3 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +33,16 @@
 		752799D62082727100465965 /* MobileProjectList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileProjectList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752799EA2082727200465965 /* MobileProjectListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileProjectListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		752799F02082727200465965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E334AEC09F148AA7EC0130 /* LoadingAlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactory.swift; sourceTree = "<group>"; };
+		B4E337005C3FCE00761A9212 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B4E337F8E3BF57347EB175C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E33A9F4BE58461922E6931 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4E33B5DA15E1FDB0F3F36C3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B4E33B7532AD0F33B7E9D698 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E33B8DDB072E62081CB268 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		B4E33BC1876ED95A135ABB9E /* LoadingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingPresenter.swift; sourceTree = "<group>"; };
 		B4E33DCC76DD0DBB76951477 /* MainWindowFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
+		B4E33EC1169276840D68D26D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4E33F956B38512546541D11 /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +109,14 @@
 			path = Asset;
 			sourceTree = "<group>";
 		};
+		B4E33540D9E84FBB55137E98 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33BC1876ED95A135ABB9E /* LoadingPresenter.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		B4E33611FC1E6FF90D3380DC /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +139,10 @@
 			children = (
 				B4E33A9F4BE58461922E6931 /* AppDelegate.swift */,
 				B4E336BEC03214E871EC967B /* Factory */,
+				B4E337005C3FCE00761A9212 /* BaseViewController.swift */,
+				B4E334AEC09F148AA7EC0130 /* LoadingAlertScreenFactory.swift */,
+				B4E33540D9E84FBB55137E98 /* Protocol */,
+				B4E33B5DA15E1FDB0F3F36C3 /* Strings.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -153,6 +175,7 @@
 		B4E33E17B2DF3AFC6F47FB2E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B4E33EC1169276840D68D26D /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +304,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NSObject-Rx.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -290,6 +314,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxMoya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/NSObject-Rx.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -305,6 +330,11 @@
 				B4E33C586F7475768B19A1F8 /* AppDelegate.swift in Sources */,
 				B4E3333C4D84174E63D071F0 /* MainWindowFactory.swift in Sources */,
 				B4E33DC1E60B5C44BB3139F2 /* RootViewControllerFactory.swift in Sources */,
+				B4E334762D1EA84F32B6798D /* LoginViewController.swift in Sources */,
+				B4E3368F09030555A2A90474 /* BaseViewController.swift in Sources */,
+				B4E33A41F7837CD358A3B27F /* LoadingAlertScreenFactory.swift in Sources */,
+				B4E33BD591717D8FB5A925D7 /* LoadingPresenter.swift in Sources */,
+				B4E33E0D8D756E9AB262DE90 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
