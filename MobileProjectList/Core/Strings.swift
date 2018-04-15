@@ -8,7 +8,8 @@ import Foundation
 struct Strings {
 
     struct App {
-        static let baseUrl = ""
+        static let baseUrl = "https://yat.teamwork.com"
+        static let apiToken = "twp_k9ejP88LcuojHjmFkUFuYIUNYalg"
     }
 
     struct LoadingAlert {
