@@ -125,9 +125,18 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		B4E3393D6E30B7C9F3522B02 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33E17B2DF3AFC6F47FB2E /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		B4E33B4BB055EC1F4B83C3EB /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				B4E3393D6E30B7C9F3522B02 /* Login */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -141,6 +150,13 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B4E33E17B2DF3AFC6F47FB2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +164,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 752799F32082727200465965 /* Build configuration list for PBXNativeTarget "MobileProjectList" */;
 			buildPhases = (
+				75D19807208406810014AA1F /* Carthage */,
+				75D19806208405B00014AA1F /* Swiftlint */,
 				752799D22082727100465965 /* Sources */,
 				752799D32082727100465965 /* Frameworks */,
 				752799D42082727100465965 /* Resources */,
@@ -235,6 +253,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75D19806208405B00014AA1F /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		75D19807208406810014AA1F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		752799D22082727100465965 /* Sources */ = {
