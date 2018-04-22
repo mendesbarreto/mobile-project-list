@@ -12,7 +12,7 @@ protocol TeamworkTargetType: TargetType {
 
 extension TeamworkTargetType {
     var baseURL: URL { return URL(string: Strings.App.baseUrl)! }
-    var parameters: [String: Any]  { return [:] }
+    var parameters: [String: Any] { return [:] }
 
     var parameterEncoding: ParameterEncoding {
         switch method {
