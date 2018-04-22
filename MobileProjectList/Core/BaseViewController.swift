@@ -26,7 +26,12 @@ extension BaseViewController: LoadingPresenter {
     }
 
     func hideLoading(onComplete: (() -> Void)?) {
-        loadingAlert?.dismiss(animated: true) { [weak self] in
+        guard let loadingAlert = self.loadingAlert else {
+            onComplete?()
+            return
+        }
+
+        loadingAlert.dismiss(animated: true) { [weak self] in
             onComplete?()
             self?.loadingAlert = nil
         }
