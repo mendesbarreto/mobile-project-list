@@ -13,6 +13,6 @@ struct Strings {
     }
 
     struct LoadingAlert {
-        static let message = "Por favor espere..."
+        static let message = "Please wait..."
     }
 }
