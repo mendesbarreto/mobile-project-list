@@ -17,7 +17,8 @@ final class PeopleViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         peopleGateway.rx.request(.people)
-                        .filterSuccessfulStatusAndRedirectCodes().subscribe(onSuccess: { response in
+                        .filterSuccessfulStatusAndRedirectCodes()
+                        .subscribe(onSuccess: { response in
                             print(response)
                         }, onError: { error in
                             print(error)
