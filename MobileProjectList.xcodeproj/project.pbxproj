@@ -18,16 +18,22 @@
 		B4E33042C3DD8FC10BA4E9AD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338E267884F191705C860 /* String.swift */; };
 		B4E3304FD3154E29DB557CF3 /* ProjectTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33667B7D49C263F275C35 /* ProjectTarget.swift */; };
 		B4E330A501DD25FD475D6250 /* BindableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339A91FBB1A83BAF5016E /* BindableView.swift */; };
+		B4E330AF499BD1DE5D6ADCF6 /* ProjectListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */; };
+		B4E331919E634D402E1982D5 /* ErrorAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3374F31F27BE7BDED7D28 /* ErrorAlertViewModel.swift */; };
 		B4E331FD8BEAF00C0E8BB269 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F4BC4D3B5497C6A1992 /* FontSize.swift */; };
+		B4E332147BA315A406D7C0CA /* ProjectListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CF7F9C7DA383271BA94 /* ProjectListPresenterInput.swift */; };
 		B4E332366AC99BE0537D1BC2 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A93EDF80BBA17449D44 /* Assets.swift */; };
 		B4E3332E2237EC619E3B2529 /* ProjectGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336F5AF0B4C3A8A9F0944 /* ProjectGateway.swift */; };
 		B4E3333C4D84174E63D071F0 /* MainWindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DCC76DD0DBB76951477 /* MainWindowFactory.swift */; };
 		B4E333CE82D35E73B2017B7D /* ProjectMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A394B5B7FB3D1B28341 /* ProjectMoyaGateway.swift */; };
 		B4E3342ACAF85C93BAC6CE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E33B7532AD0F33B7E9D698 /* LaunchScreen.storyboard */; };
+		B4E33464FEFB9F3E503D6106 /* ProjectListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DCBCEBACB90336A403D /* ProjectListDataSource.swift */; };
 		B4E334762D1EA84F32B6798D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33EC1169276840D68D26D /* LoginViewController.swift */; };
 		B4E334DB18BC9ABDF31F1D50 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339BDF8AC1F42C1C7F178 /* Category.swift */; };
 		B4E334DDFBFF0E9A1D1D3EB2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FE4A17782839F10783C /* Project.swift */; };
+		B4E3353C1E70FF462FBA6844 /* ListProjectUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3353FEA11A4D0F4D57BEF /* ListProjectUseCase.swift */; };
 		B4E3359C0BF06FD974DE65E3 /* ProjectListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336370687282FD399395D /* ProjectListViewCell.swift */; };
+		B4E335F7CF813B494459D42D /* ProjectListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33FFDB8A6A5BC991CD1E0 /* ProjectListDelegate.swift */; };
 		B4E33618C0D436A36FD872F9 /* BindableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3342649C930089D0CDDC4 /* BindableCell.swift */; };
 		B4E336592131DA55DFC1D731 /* ProjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331A89C8CBA420C1B4BA9 /* ProjectResponse.swift */; };
 		B4E3368F09030555A2A90474 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337005C3FCE00761A9212 /* BaseViewController.swift */; };
@@ -37,6 +43,9 @@
 		B4E33805609FC03C03D07F48 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33596DC12A87639BC712B /* User.swift */; };
 		B4E339166A8DCA6332CC0123 /* TeamworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338187DD2DCDD1278BA02 /* TeamworkTargetType.swift */; };
 		B4E33969FD0430D0050A9116 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B901C4D17843298E255 /* Company.swift */; };
+		B4E339BA9E2C2C57B92030F7 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B2CDB1E1221F5F21E29 /* NSAttributedString.swift */; };
+		B4E339CE994853B71AFD628F /* ProjectCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E333117AB44588B47F23A5 /* ProjectCellViewModel.swift */; };
+		B4E339FCBA648546E17051B5 /* ProjectListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3389764D03696EB88E21B /* ProjectListPresenter.swift */; };
 		B4E33A3C086FF72DBB561090 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338B9571A29E58D8A3C63 /* UITableViewCell.swift */; };
 		B4E33A7BA1A81AD6A80BE9F2 /* TeamworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3316B431AB4D645EE5D9F /* TeamworkResponse.swift */; };
 		B4E33A8F2440B791D5F77365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E337F8E3BF57347EB175C4 /* Assets.xcassets */; };
@@ -49,6 +58,7 @@
 		B4E33E48AFF6B96EC6305155 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338EFE0420A87AFF512A6 /* AlertViewModel.swift */; };
 		B4E33F33ED22261AC5283063 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B2FC36556446114DDEF /* UIView.swift */; };
 		B4E33FBFDB6BFB6BB67FDEBB /* URLCredentialFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33BE8B03508FEB54CC666 /* URLCredentialFactory.swift */; };
+		B4E33FD96C58E87CDE2A196E /* ListProjectUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DA613E0BC5E62A4E118 /* ListProjectUseCaseFactory.swift */; };
 		B4E33FDC02177ABCD9CFDD41 /* PeopleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33AE29036F77D86B44426 /* PeopleTarget.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,14 +88,19 @@
 		B4E331A89C8CBA420C1B4BA9 /* ProjectResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectResponse.swift; sourceTree = "<group>"; };
 		B4E331FDFE62283C1051D471 /* AlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertScreenFactory.swift; sourceTree = "<group>"; };
 		B4E33208EA067E881675C2ED /* LoadingAlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactory.swift; sourceTree = "<group>"; };
+		B4E333117AB44588B47F23A5 /* ProjectCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCellViewModel.swift; sourceTree = "<group>"; };
 		B4E3342649C930089D0CDDC4 /* BindableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableCell.swift; sourceTree = "<group>"; };
+		B4E3353FEA11A4D0F4D57BEF /* ListProjectUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectUseCase.swift; sourceTree = "<group>"; };
 		B4E33596DC12A87639BC712B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B4E336370687282FD399395D /* ProjectListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewCell.swift; sourceTree = "<group>"; };
+		B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenterOutput.swift; sourceTree = "<group>"; };
 		B4E33667B7D49C263F275C35 /* ProjectTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTarget.swift; sourceTree = "<group>"; };
 		B4E336F5AF0B4C3A8A9F0944 /* ProjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectGateway.swift; sourceTree = "<group>"; };
 		B4E337005C3FCE00761A9212 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B4E3374F31F27BE7BDED7D28 /* ErrorAlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorAlertViewModel.swift; sourceTree = "<group>"; };
 		B4E337F8E3BF57347EB175C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E338187DD2DCDD1278BA02 /* TeamworkTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamworkTargetType.swift; sourceTree = "<group>"; };
+		B4E3389764D03696EB88E21B /* ProjectListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenter.swift; sourceTree = "<group>"; };
 		B4E338B9571A29E58D8A3C63 /* UITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		B4E338E267884F191705C860 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B4E338EFE0420A87AFF512A6 /* AlertViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +110,7 @@
 		B4E33A93EDF80BBA17449D44 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		B4E33A9F4BE58461922E6931 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E33AE29036F77D86B44426 /* PeopleTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTarget.swift; sourceTree = "<group>"; };
+		B4E33B2CDB1E1221F5F21E29 /* NSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		B4E33B2FC36556446114DDEF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B4E33B5DA15E1FDB0F3F36C3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		B4E33B7532AD0F33B7E9D698 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,12 +120,16 @@
 		B4E33BE8B03508FEB54CC666 /* URLCredentialFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLCredentialFactory.swift; sourceTree = "<group>"; };
 		B4E33C0DDAC3FEEC39196A76 /* ProjectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
 		B4E33C8F1EBE39BC3CA75C56 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		B4E33CF7F9C7DA383271BA94 /* ProjectListPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenterInput.swift; sourceTree = "<group>"; };
+		B4E33DA613E0BC5E62A4E118 /* ListProjectUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectUseCaseFactory.swift; sourceTree = "<group>"; };
+		B4E33DCBCEBACB90336A403D /* ProjectListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListDataSource.swift; sourceTree = "<group>"; };
 		B4E33DCC76DD0DBB76951477 /* MainWindowFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowFactory.swift; sourceTree = "<group>"; };
 		B4E33EC1169276840D68D26D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4E33F3799CB086DFD7C61B4 /* PeopleGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleGateway.swift; sourceTree = "<group>"; };
 		B4E33F4BC4D3B5497C6A1992 /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		B4E33F956B38512546541D11 /* RootViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E33FE4A17782839F10783C /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		B4E33FFDB8A6A5BC991CD1E0 /* ProjectListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +215,11 @@
 			children = (
 				B4E334F8E7A85FEC7E111775 /* Controller */,
 				B4E330F0F7D49CFB4E553896 /* View */,
+				B4E33354708D0079B054DB22 /* ViewModel */,
+				B4E333B7B15800823FBBBA0E /* UseCase */,
+				B4E3317A0A3AB7C8188D308F /* Factory */,
+				B4E334B6504CC71CF10E9833 /* Presenter */,
+				B4E331DCDF3D0756765CFAEB /* Providers */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -224,6 +249,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B4E3317A0A3AB7C8188D308F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33DA613E0BC5E62A4E118 /* ListProjectUseCaseFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		B4E33194ACA214C193690A49 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,12 +267,22 @@
 			path = Gateway;
 			sourceTree = "<group>";
 		};
+		B4E331DCDF3D0756765CFAEB /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33DCBCEBACB90336A403D /* ProjectListDataSource.swift */,
+				B4E33FFDB8A6A5BC991CD1E0 /* ProjectListDelegate.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
 		B4E3320874740A02B05C91B7 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				B4E33B2FC36556446114DDEF /* UIView.swift */,
 				B4E338E267884F191705C860 /* String.swift */,
 				B4E338B9571A29E58D8A3C63 /* UITableViewCell.swift */,
+				B4E33B2CDB1E1221F5F21E29 /* NSAttributedString.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -250,6 +293,32 @@
 				B4E33C8F1EBE39BC3CA75C56 /* PeopleViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E33354708D0079B054DB22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E333117AB44588B47F23A5 /* ProjectCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B4E333B7B15800823FBBBA0E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3353FEA11A4D0F4D57BEF /* ListProjectUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4E334B6504CC71CF10E9833 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33CF7F9C7DA383271BA94 /* ProjectListPresenterInput.swift */,
+				B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */,
+				B4E3389764D03696EB88E21B /* ProjectListPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		B4E334F8E7A85FEC7E111775 /* Controller */ = {
@@ -310,6 +379,7 @@
 				B4E33A93EDF80BBA17449D44 /* Assets.swift */,
 				B4E336C09DB858F4F63677D9 /* View */,
 				B4E33F4BC4D3B5497C6A1992 /* FontSize.swift */,
+				B4E33FF83BF0BB4F4F641228 /* ViewModel */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -389,6 +459,14 @@
 				B4E33667B7D49C263F275C35 /* ProjectTarget.swift */,
 			);
 			path = Target;
+			sourceTree = "<group>";
+		};
+		B4E33FF83BF0BB4F4F641228 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3374F31F27BE7BDED7D28 /* ErrorAlertViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +651,16 @@
 				B4E33618C0D436A36FD872F9 /* BindableCell.swift in Sources */,
 				B4E330A501DD25FD475D6250 /* BindableView.swift in Sources */,
 				B4E331FD8BEAF00C0E8BB269 /* FontSize.swift in Sources */,
+				B4E339CE994853B71AFD628F /* ProjectCellViewModel.swift in Sources */,
+				B4E3353C1E70FF462FBA6844 /* ListProjectUseCase.swift in Sources */,
+				B4E33FD96C58E87CDE2A196E /* ListProjectUseCaseFactory.swift in Sources */,
+				B4E332147BA315A406D7C0CA /* ProjectListPresenterInput.swift in Sources */,
+				B4E330AF499BD1DE5D6ADCF6 /* ProjectListPresenterOutput.swift in Sources */,
+				B4E331919E634D402E1982D5 /* ErrorAlertViewModel.swift in Sources */,
+				B4E339BA9E2C2C57B92030F7 /* NSAttributedString.swift in Sources */,
+				B4E33464FEFB9F3E503D6106 /* ProjectListDataSource.swift in Sources */,
+				B4E335F7CF813B494459D42D /* ProjectListDelegate.swift in Sources */,
+				B4E339FCBA648546E17051B5 /* ProjectListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

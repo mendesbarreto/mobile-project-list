@@ -5,6 +5,7 @@
 
 import Foundation
 
+//swiftlint:disable nesting
 struct Strings {
 
     struct App {
@@ -12,7 +13,19 @@ struct Strings {
         static let apiToken = "twp_k9ejP88LcuojHjmFkUFuYIUNYalg"
     }
 
-    struct LoadingAlert {
-        static let message = "Please wait..."
+    struct Alert {
+        struct Loading {
+            static let message = "Please wait..."
+        }
+
+        struct Error {
+            static let title = "Ops.."
+            static let message = "Some problem on process your information"
+        }
+
+        struct ProjectListEmpty {
+            static let title = "Ops.."
+            static let message = "You do not have any project added to your account"
+        }
     }
 }

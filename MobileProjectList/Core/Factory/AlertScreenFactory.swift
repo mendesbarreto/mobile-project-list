@@ -7,7 +7,9 @@ import UIKit
 
 final class AlertScreenFactory {
     static func make(viewModel: AlertViewModel) -> UIAlertController {
-        let alertViewController = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: viewModel.style)
+        let alertViewController = UIAlertController(title: viewModel.title,
+                                                    message: viewModel.message,
+                                                    preferredStyle: viewModel.style)
 
         viewModel.actions.forEach { action in
             alertViewController.addAction(action)
