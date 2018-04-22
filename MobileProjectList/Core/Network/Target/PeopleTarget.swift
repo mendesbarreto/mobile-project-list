@@ -10,8 +10,7 @@ enum PeopleTarget: TeamworkTargetType {
 
     var path: String {
         switch self {
-        case .people:
-            return "/people.json"
+        case .people: return "/people.json"
         }
     }
 
