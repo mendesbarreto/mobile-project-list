@@ -7,7 +7,7 @@ import UIKit
 
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
-        let viewController = PeopleViewController()
+        let viewController = ProjectListViewController()
         viewController.view.backgroundColor = .purple
         return viewController
     }
