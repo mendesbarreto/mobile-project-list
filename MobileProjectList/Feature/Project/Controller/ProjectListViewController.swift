@@ -8,6 +8,10 @@ import RxSwift
 import RxCocoa
 import NSObject_Rx
 
+enum ProjectListError: Error {
+    case problemToFindCellAtIndexPath
+}
+
 final class ProjectListViewController: BaseViewController, ProjectListPresenterOutput {
 
     private var tableView = UITableView()
@@ -25,20 +29,30 @@ final class ProjectListViewController: BaseViewController, ProjectListPresenterO
         return nil
     }
 
+    // MARK: ViewController methods
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationController()
         setupTableViewLayout()
         setupTableView()
+        setupTableViewEvent()
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        listProjectUseCase.list()
+    }
+
+    // MARK: Private methods
 
     private func setupTableViewLayout() {
         view.addSubview(tableView)
         tableView.anchorToFit(in: view)
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        listProjectUseCase.list()
+    private func setupNavigationController() {
+        setNavigation(title: Strings.ProjectList.Nav.title)
     }
 
     private func setupTableView() {
@@ -47,10 +61,32 @@ final class ProjectListViewController: BaseViewController, ProjectListPresenterO
         tableView.delegate = delegate
     }
 
+    private func setupTableViewEvent() {
+        tableView.rx
+                .itemSelected
+                .map { [weak tableView] (indexPath) -> String in
+                    guard let cell = tableView?.cellForRow(at: indexPath) as? ProjectViewCell else {
+                        throw ProjectListError.problemToFindCellAtIndexPath
+                    }
+                    return cell.viewModel.identifier
+                }
+                .subscribe(onNext: onProjectSelected)
+                .disposed(by: disposeBag)
+    }
+
+    private func onProjectSelected(id: String) {
+        goToUserList(withProjectId: id)
+    }
+
+    private func goToUserList(withProjectId id: String) {
+        navigationController?.pushViewController(ProjectDetailViewController(projectId: id), animated: true)
+        //navigationController?.pushViewController(PeopleViewControllerFactory.make(withProjectId: id), animated: true)
+    }
+
     // MARK: ProjectListPresenterOutput
 
     func show(projects: [ProjectCellViewModel]) {
-        dataSource.append(projects: projects)
+        dataSource.replace(projects: projects)
         tableView.reloadData()
     }
 

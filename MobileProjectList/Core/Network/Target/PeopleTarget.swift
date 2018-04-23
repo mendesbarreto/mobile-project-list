@@ -7,16 +7,19 @@ import Moya
 
 enum PeopleTarget: TeamworkTargetType {
     case people
+    case peopleByProject(id: String)
 
     var path: String {
         switch self {
         case .people: return "/people.json"
+        case .peopleByProject(let id): return "/projects/\(id)/people.json"
         }
     }
 
     var method: Method {
         switch self {
-        case .people:
+        case .people,
+             .peopleByProject:
             return .get
         }
     }

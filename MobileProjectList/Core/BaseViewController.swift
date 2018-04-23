@@ -4,8 +4,9 @@
 //
 
 import UIKit
+import NSObject_Rx
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, HasDisposeBag {
 
     private var loadingAlert: UIAlertController?
 
@@ -16,6 +17,10 @@ class BaseViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         print("this class can not be initialized for NSCoder arg")
         return nil
+    }
+
+    func setNavigation(title: String) {
+        self.title = title
     }
 }
 

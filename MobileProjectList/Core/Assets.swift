@@ -9,6 +9,7 @@ enum Assets: String {
     case icLogo = "ic_logo"
     case icPlaceHolder = "ic_placeholder"
     case icStart = "ic_star"
+    case icTask = "ic_task"
 
     var image: UIImage {
         return UIImage(asset: self)

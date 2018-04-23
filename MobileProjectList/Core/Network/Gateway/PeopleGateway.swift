@@ -6,5 +6,6 @@
 import RxSwift
 
 protocol PeopleGateway {
-    func users() -> Single<[User]>
+    func people() -> Single<[Person]>
+    func people(byProjectId: String) -> Single<[Person]>
 }

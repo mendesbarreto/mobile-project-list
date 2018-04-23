@@ -6,5 +6,6 @@
 import RxSwift
 
 protocol ProjectGateway {
-    func projects() -> Single<ProjectResponse>
+    func projects() -> Single<[Project]>
+    func project(byId: String) -> Single<Project>
 }

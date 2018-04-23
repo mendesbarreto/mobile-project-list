@@ -8,8 +8,8 @@ import UIKit
 final class ProjectListDataSource: NSObject, UITableViewDataSource {
     private var projectList: [ProjectCellViewModel] = []
 
-    func append(projects: [ProjectCellViewModel]) {
-        projectList.append(contentsOf: projects)
+    func replace(projects: [ProjectCellViewModel]) {
+        projectList = projects
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

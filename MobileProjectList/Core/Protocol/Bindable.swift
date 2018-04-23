@@ -5,5 +5,8 @@
 
 import Foundation
 
-struct User {
+protocol Bindable {
+    associatedtype ViewModel
+
+    func bind(viewModel: ViewModel)
 }

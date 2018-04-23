@@ -17,19 +17,29 @@ final class ProjectListPresenter: ProjectListPresenterInput {
         let viewModels: [ProjectCellViewModel] = try list.map { project in
             let url = try project.logo.asUrl()
             let startImage = Assets.icStart.image.withRenderingMode(.alwaysTemplate)
-            var startImageColor: UIColor = .gray
-            if project.starred {
-                startImageColor = .yellow
-            }
+            let startImageColor = defineStartColorBy(project: project)
+            let tagsViewModels = map(tags: project.tags)
+
             return ProjectCellViewModel(name: .titleMediumGray(withText: project.name),
                                         description: .descriptionSmallGray(withText: project.description),
                                         logoUrl: url,
                                         identifier: project.id,
                                         placeHolderImage: Assets.icPlaceHolder.image,
                                         startImage: startImage,
-                                        startImageColor: startImageColor)
+                                        startImageColor: startImageColor,
+                                        tags: tagsViewModels)
         }
         presenterOutput.show(projects: viewModels)
+    }
+
+    private func map(tags: [Tag]) -> [TagViewModel] {
+        return tags.map { tag in
+            return TagViewModel(title: .titleXSmallWhite(withText: tag.name), backgroundColor: .red, cornerRadios: 5)
+        }
+    }
+
+    private func defineStartColorBy(project: Project) -> UIColor {
+        return project.starred ? .yellow : .gray
     }
 
     func showEmptyState() {

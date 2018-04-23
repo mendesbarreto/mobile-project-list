@@ -12,6 +12,10 @@ final class ProjectViewCell: BindableCell<ProjectCellViewModel> {
     private let descriptionLabel = UILabel()
     private let logoImageView = UIImageView()
     private let startImageView = UIImageView()
+    private let startContentView = UIView()
+    private let tagsStackView = UIStackView()
+
+    private var heightAnchorConstraint: NSLayoutConstraint!
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,6 +34,29 @@ final class ProjectViewCell: BindableCell<ProjectCellViewModel> {
         startImageView.image = viewModel.startImage
         startImageView.tintColor = viewModel.startImageColor
         accessibilityIdentifier = viewModel.identifier
+        setupTagsView()
+    }
+
+    private func setupTagsView() {
+        removeSubviewsFromStackTagViewIfNeeded()
+        if viewModel.tags.count > 0 {
+            heightAnchorConstraint.constant = 20
+            var tagView: TagView!
+            viewModel.tags.forEach { model in
+                tagView = TagView()
+                tagView.bind(viewModel: model)
+                tagsStackView.addArrangedSubview(tagView)
+            }
+        } else {
+            heightAnchorConstraint.constant = 0
+        }
+    }
+
+    private func removeSubviewsFromStackTagViewIfNeeded() {
+        tagsStackView.arrangedSubviews.forEach { view in
+            tagsStackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
+         }
     }
 }
 
@@ -43,6 +70,38 @@ extension ProjectViewCell {
         setupTitleLayout()
         setupStartImageLayout()
         setupDescriptionLayoutImage()
+        setupStarContentView()
+        setupTagStackViewLayout()
+    }
+
+    private func setupTagStackViewLayout() {
+        heightAnchorConstraint = tagsStackView.heightAnchor.constraint(equalToConstant: 20)
+        heightAnchorConstraint.isActive = true
+        tagsStackView.startAnchor()
+                     .bottomAnchor(to: contentView, constant: -5)
+                     .leadingAnchor(toEqualAnchor: logoImageView.trailingAnchor, constant: 15)
+                     .trailingAnchor(to: contentView)
+        tagsStackView.distribution = .fillProportionally
+        tagsStackView.axis = .horizontal
+        tagsStackView.spacing = 3
+        tagsStackView.backgroundColor = .clear
+    }
+
+    private func addSubViewToContentView() {
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(descriptionLabel)
+        contentView.addSubview(logoImageView)
+        contentView.addSubview(tagsStackView)
+        contentView.addSubview(startContentView)
+    }
+
+    private func setupStarContentView() {
+        startContentView.startAnchor()
+                        .trailingAnchor(to: contentView)
+                        .topAnchor(to: contentView)
+                        .widthAnchor(equalToConstant: 40)
+                        .bottomAnchor(toEqualAnchor: tagsStackView.topAnchor)
+        startContentView.backgroundColor = .clear
     }
 
     private func setupDescriptionLayoutImage() {
@@ -52,30 +111,26 @@ extension ProjectViewCell {
                         .topAnchor(toEqualAnchor: titleLabel.bottomAnchor, constant: 5)
                         .leadingAnchor(toEqualAnchor: logoImageView.trailingAnchor, constant: 15)
                         .trailingAnchor(toEqualAnchor: startImageView.leadingAnchor, constant: -8)
+                        .bottomAnchor(toEqualAnchor: tagsStackView.topAnchor, constant: -20)
     }
 
     private func setupStartImageLayout() {
+        startContentView.addSubview(startImageView)
         startImageView.startAnchor()
                       .heightAnchor(equalToConstant: 30)
                       .widthAnchor(equalToConstant: 30)
-                      .centerYAnchor(toEqualAnchor: contentView.centerYAnchor)
-                      .trailingAnchor(to: contentView, constant: -8)
+                      .centerYAnchor(toEqualAnchor: startContentView.centerYAnchor)
+                      .centerXAnchor(toEqualAnchor: startContentView.centerXAnchor)
         startImageView.backgroundColor = .clear
         startImageView.contentMode = .scaleAspectFit
     }
 
     private func setupTitleLayout() {
         titleLabel.startAnchor()
+                  .heightAnchor(equalToConstant: 40)
                   .leadingAnchor(toEqualAnchor: logoImageView.trailingAnchor, constant: 15)
                   .trailingAnchor(to: contentView)
                   .topAnchor(to: contentView, constant: 10)
-    }
-
-    private func addSubViewToContentView() {
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(startImageView)
-        contentView.addSubview(logoImageView)
     }
 
     private func setupLogoLayout() {

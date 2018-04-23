@@ -20,11 +20,11 @@ final class ListProjectUseCase: HasDisposeBag {
 
     func list() {
         presenter.showLoading()
-        projectGateway.projects().subscribe(onSuccess: { [weak self] response in
+        projectGateway.projects().subscribe(onSuccess: { [weak self] projects in
             guard let strongSelf = self else {
                 return
             }
-            strongSelf.show(list: response.projects)
+            strongSelf.show(list: projects)
         }, onError: { [weak self] error in
             print(error)
             self?.showError()

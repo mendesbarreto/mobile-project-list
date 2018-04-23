@@ -5,8 +5,8 @@
 
 import Foundation
 
-protocol BindableView {
-    associatedtype ViewModel
-
-    func bind(viewModel: ViewModel)
+struct Tag: Codable {
+    let id: String
+    let name: String
+    let color: String
 }

@@ -13,4 +13,5 @@ struct ProjectCellViewModel {
     let placeHolderImage: UIImage
     let startImage: UIImage
     let startImageColor: UIColor
+    let tags: [TagViewModel]
 }

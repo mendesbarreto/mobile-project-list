@@ -8,11 +8,9 @@ import Foundation
 struct Company: Codable {
     private enum CodingKeys: String, CodingKey {
         case name
-        case isOwner = "is-owner"
         case id
     }
 
     let name: String
-    let isOwner: String
     let id: String
 }

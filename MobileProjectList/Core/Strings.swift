@@ -8,6 +8,31 @@ import Foundation
 //swiftlint:disable nesting
 struct Strings {
 
+    struct ProjectDetail {
+        struct Button {
+            static let people = "People"
+            static let tasks = "Tasks"
+        }
+    }
+
+    struct ProjectList {
+        struct Nav {
+            static let title = "Project List"
+        }
+    }
+
+    struct PeopleList {
+        struct Nav {
+            static let title = "People"
+        }
+    }
+
+    struct TaskList {
+        struct Nav {
+            static let title = "Tasks"
+        }
+    }
+
     struct App {
         static let baseUrl = "https://yat.teamwork.com"
         static let apiToken = "twp_k9ejP88LcuojHjmFkUFuYIUNYalg"

@@ -7,8 +7,9 @@ import UIKit
 
 final class RootViewControllerFactory {
     static func make() -> UIViewController {
-        let viewController = ProjectListViewController()
-        viewController.view.backgroundColor = .purple
-        return viewController
+        let rootViewController = ProjectListViewController()
+        rootViewController.view.backgroundColor = .white
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        return navigationController
     }
 }

@@ -15,14 +15,23 @@ final class ProjectMoyaGateway: ProjectGateway {
             return URLCredentialFactory.make()
         }])
     }
-    func projects() -> Single<ProjectResponse> {
+
+    func projects() -> Single<[Project]> {
         return provider.rx
                        .request(.projects)
-                       .debug()
                        .filterSuccessfulStatusAndRedirectCodes()
-                       .debug()
-                       .map(ProjectResponse.self)
-                       .debug()
+                       .map(ProjectListResponse.self)
+                       .map { $0.projects }
                        .observeOn(MainScheduler.instance)
+    }
+
+    func project(byId id: String) -> Single<Project> {
+        return provider.rx.request(.project(byId: id))
+                          .filterSuccessfulStatusAndRedirectCodes()
+                          .debug()
+                          .map(ProjectResponse.self)
+                          .debug("Mapping")
+                          .map { $0.project }
+                          .observeOn(MainScheduler.instance)
     }
 }

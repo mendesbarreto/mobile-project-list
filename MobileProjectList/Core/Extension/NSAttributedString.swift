@@ -6,9 +6,33 @@
 import UIKit
 
 extension NSAttributedString {
+    static func titleXSmallWhite(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .white,
+                                andFont: .systemFont(ofSize: FontSize.xSmall, weight: .bold))
+    }
+
+    static func titleMediumBlack(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .black,
+                                andFont: .systemFont(ofSize: FontSize.medium, weight: .regular))
+    }
+
+    static func titleLargeGray(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .gray,
+                                andFont: .systemFont(ofSize: FontSize.large, weight: .bold))
+    }
+
     static func titleMediumGray(withText text: String) -> NSAttributedString {
         return attributedString(withText: text,
                                 andColor: .gray,
+                                andFont: .systemFont(ofSize: FontSize.medium, weight: .bold))
+    }
+
+    static func titleMediumLightGray(withText text: String) -> NSAttributedString {
+        return attributedString(withText: text,
+                                andColor: .lightGray,
                                 andFont: .systemFont(ofSize: FontSize.medium, weight: .bold))
     }
 
