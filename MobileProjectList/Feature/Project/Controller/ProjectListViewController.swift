@@ -86,7 +86,7 @@ final class ProjectListViewController: BaseViewController, ProjectListPresenterO
     }
 
     private func goToProjectDetail(withProjectId id: String) {
-        navigationController?.pushViewController(ProjectDetailViewController(projectId: id), animated: true)
+        navigationController?.pushViewController(ProjectDetailViewControllerFactory.make(withProjectId: id), animated: true)
     }
 
     // MARK: ProjectListPresenterOutput

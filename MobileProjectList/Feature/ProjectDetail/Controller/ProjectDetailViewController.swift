@@ -9,15 +9,16 @@ import RxSwift
 
 final class ProjectDetailViewController: BaseViewController {
 
-    private let projectDetailView = ProjectDetailView()
-    private var showProjectDetailUseCase: ShowProjectDetailUseCase!
+    private let projectDetailView: ProjectDetailView
+    private let showProjectDetailUseCase: ShowProjectDetailInteractor
 
-    private(set) var projectId: String
+    let projectId: String
 
-    init(projectId: String) {
+    init(projectId: String, projectDetailView: ProjectDetailView, showProjectDetailUseCase: ShowProjectDetailInteractor) {
         self.projectId = projectId
+        self.projectDetailView = projectDetailView
+        self.showProjectDetailUseCase = showProjectDetailUseCase
         super.init()
-        showProjectDetailUseCase = ShowProjectDetailUseCaseFactory.make(presenter: self)
     }
 
     required init?(coder aDecoder: NSCoder) {

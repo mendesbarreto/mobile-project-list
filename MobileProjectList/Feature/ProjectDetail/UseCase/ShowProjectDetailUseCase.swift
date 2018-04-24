@@ -6,7 +6,7 @@
 import RxSwift
 import NSObject_Rx
 
-final class ShowProjectDetailUseCase: HasDisposeBag {
+final class ShowProjectDetailUseCase: ShowProjectDetailInteractor, HasDisposeBag {
 
     private let projectGateway: ProjectGateway
     private let presenter: ProjectDetailPresenterInput

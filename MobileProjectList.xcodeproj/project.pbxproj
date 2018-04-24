@@ -60,6 +60,7 @@
 		B4E333CE82D35E73B2017B7D /* ProjectMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A394B5B7FB3D1B28341 /* ProjectMoyaGateway.swift */; };
 		B4E334118399F7C839092935 /* PeopleListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B4F2C51EFDE0B82DA7A /* PeopleListViewControllerFactory.swift */; };
 		B4E3342ACAF85C93BAC6CE99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E33B7532AD0F33B7E9D698 /* LaunchScreen.storyboard */; };
+		B4E334327A5613990F058056 /* ProjectDetailViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337918964C3FD02323C44 /* ProjectDetailViewControllerFactory.swift */; };
 		B4E3343A2CCC8EBF487E920F /* ProjectDetailPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E333A801C403DC735C04ED /* ProjectDetailPresenterInput.swift */; };
 		B4E33464FEFB9F3E503D6106 /* ProjectListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33DCBCEBACB90336A403D /* ProjectListDataSource.swift */; };
 		B4E334DB18BC9ABDF31F1D50 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339BDF8AC1F42C1C7F178 /* Category.swift */; };
@@ -127,6 +128,7 @@
 		B4E33D86A61FE077169FC875 /* TaskMoyaGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33983D3EBB9DC5E77ABA5 /* TaskMoyaGateway.swift */; };
 		B4E33DC1E60B5C44BB3139F2 /* RootViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F956B38512546541D11 /* RootViewControllerFactory.swift */; };
 		B4E33DCD6F9BBB1F9D3A4DD5 /* TaskListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D246CDCC3CF13DFD3C7 /* TaskListPresenterInput.swift */; };
+		B4E33DD0D68D5D3F82316D12 /* ShowProjectDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3323925E9DDEA23084F71 /* ShowProjectDetailInteractor.swift */; };
 		B4E33E0D8D756E9AB262DE90 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33B5DA15E1FDB0F3F36C3 /* Strings.swift */; };
 		B4E33E48AFF6B96EC6305155 /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338EFE0420A87AFF512A6 /* AlertViewModel.swift */; };
 		B4E33E569DD2725F5802FC8F /* ListPeopleUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D64B3BE8BF60912F250 /* ListPeopleUseCaseFactory.swift */; };
@@ -181,6 +183,7 @@
 		B4E331FFFC90F0700A964D0A /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		B4E3320379E82377E3AD951B /* ProjectListPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenterSpec.swift; sourceTree = "<group>"; };
 		B4E33208EA067E881675C2ED /* LoadingAlertScreenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAlertScreenFactory.swift; sourceTree = "<group>"; };
+		B4E3323925E9DDEA23084F71 /* ShowProjectDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectDetailInteractor.swift; sourceTree = "<group>"; };
 		B4E3329005FA5F4EFF7689E7 /* ListTasksUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTasksUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E332C295B6F8B8EE8F2D3C /* PeopleGatewayMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleGatewayMock.swift; sourceTree = "<group>"; };
 		B4E333117AB44588B47F23A5 /* ProjectCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCellViewModel.swift; sourceTree = "<group>"; };
@@ -214,6 +217,7 @@
 		B4E33756F1451E9CF3D3057B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B4E337581BD6BC2E668B0F91 /* ProjectDetailPresenterOutputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailPresenterOutputMock.swift; sourceTree = "<group>"; };
 		B4E33760131A9BB3093C7710 /* PeopleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleResponse.swift; sourceTree = "<group>"; };
+		B4E337918964C3FD02323C44 /* ProjectDetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E337B969D4727394066B60 /* TaskListPresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListPresenterInputMock.swift; sourceTree = "<group>"; };
 		B4E337F10F3B953FA3C4566D /* TaskListPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListPresenterSpec.swift; sourceTree = "<group>"; };
 		B4E337F8E3BF57347EB175C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -697,6 +701,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E33FCD84A39AADC97BA61F /* ShowProjectDetailUseCase.swift */,
+				B4E3323925E9DDEA23084F71 /* ShowProjectDetailInteractor.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -820,6 +825,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E335CC46F011F3D2D389E6 /* ShowProjectDetailUseCaseFactory.swift */,
+				B4E337918964C3FD02323C44 /* ProjectDetailViewControllerFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -1319,6 +1325,8 @@
 				B4E33A88434CB072C700C8F0 /* ListProjectInteractor.swift in Sources */,
 				B4E3316874D4C5A540BA13D8 /* UIColor.swift in Sources */,
 				B4E330F77FC7F2A078982765 /* ListPeopleInteractor.swift in Sources */,
+				B4E334327A5613990F058056 /* ProjectDetailViewControllerFactory.swift in Sources */,
+				B4E33DD0D68D5D3F82316D12 /* ShowProjectDetailInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

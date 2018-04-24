@@ -7,9 +7,13 @@ import Foundation
 
 final class ProjectDetailPresenter: ProjectDetailPresenterInput {
 
-    private unowned let presenterOutput: ProjectDetailPresenterOutput
+    private weak var presenterOutput: ProjectDetailPresenterOutput?
 
-    init(presenterOutput: ProjectDetailPresenterOutput) {
+    init(presenterOutput: ProjectDetailPresenterOutput? = nil) {
+        self.presenterOutput = presenterOutput
+    }
+
+    func setup(presenterOutput: ProjectDetailPresenterOutput) {
         self.presenterOutput = presenterOutput
     }
 
@@ -22,19 +26,19 @@ final class ProjectDetailPresenter: ProjectDetailPresenterInput {
                                                       companyName: .titleMediumGray(withText: project.company.name),
                                                       peopleButtonTitle: .titleMediumLightGray(withText: Strings.ProjectDetail.Button.people),
                                                       tasksButtonTitle: .titleMediumLightGray(withText: Strings.ProjectDetail.Button.tasks))
-        presenterOutput.show(projectViewModel: projectViewModel)
+        presenterOutput?.show(projectViewModel: projectViewModel)
     }
 
     func showError() {
-        presenterOutput.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.Error.title,
+        presenterOutput?.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.Error.title,
                                                                  message: Strings.Alert.Error.message))
     }
 
     func showLoading() {
-        presenterOutput.showLoading()
+        presenterOutput?.showLoading()
     }
 
     func hideLoading(onComplete: (() -> Void)?) {
-        presenterOutput.hideLoading(onComplete: onComplete)
+        presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

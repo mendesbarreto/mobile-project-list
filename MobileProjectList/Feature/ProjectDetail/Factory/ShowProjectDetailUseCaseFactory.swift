@@ -6,8 +6,7 @@
 import Foundation
 
 final class ShowProjectDetailUseCaseFactory {
-    static func make(presenter: ProjectDetailPresenterOutput) -> ShowProjectDetailUseCase {
-        let presenter = ProjectDetailPresenter(presenterOutput: presenter)
-        return ShowProjectDetailUseCase(presenter: presenter, projectGateway: ProjectMoyaGateway())
+    static func make(presenterInput: ProjectDetailPresenterInput) -> ShowProjectDetailUseCase {
+        return ShowProjectDetailUseCase(presenter: presenterInput, projectGateway: ProjectMoyaGateway())
     }
 }
