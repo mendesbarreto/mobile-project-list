@@ -11,7 +11,7 @@ import RxCocoa
 import NSObject_Rx
 import SDWebImage
 
-final class ListTasksUseCase: HasDisposeBag {
+final class ListTasksUseCase: ListTasksInteractor, HasDisposeBag {
 
     private let taskGateway: TaskGateway
     private let presenter: TaskListPresenterInput

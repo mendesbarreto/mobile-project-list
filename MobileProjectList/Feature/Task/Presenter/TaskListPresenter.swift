@@ -7,19 +7,23 @@ import Foundation
 
 final class TaskListPresenter: TaskListPresenterInput {
 
-    private unowned let presenterOutput: TaskListPresenterOutput
+    private weak var presenterOutput: TaskListPresenterOutput?
 
-    init(presenterOutput: TaskListPresenterOutput) {
+    init(presenterOutput: TaskListPresenterOutput? = nil) {
+        self.presenterOutput = presenterOutput
+    }
+
+    func setup(presenterOutput: TaskListPresenterOutput) {
         self.presenterOutput = presenterOutput
     }
 
     func showError() {
-        presenterOutput.show(alert: ErrorAlertViewModel(title: Strings.Alert.Error.title,
+        presenterOutput?.show(alert: ErrorAlertViewModel(title: Strings.Alert.Error.title,
                                                         message: Strings.Alert.Error.message))
     }
 
     func showEmptyState() {
-        presenterOutput.show(alert: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
+        presenterOutput?.show(alert: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
                                                         message: Strings.Alert.ProjectListEmpty.message))
     }
 
@@ -28,14 +32,14 @@ final class TaskListPresenter: TaskListPresenterInput {
             return TaskViewModel(image: Assets.icTask.image, title: .titleMediumGray(withText: model.name))
         }
 
-        presenterOutput.show(tasksViewModel: viewModels)
+        presenterOutput?.show(tasksViewModel: viewModels)
     }
 
     func showLoading() {
-        presenterOutput.showLoading()
+        presenterOutput?.showLoading()
     }
 
     func hideLoading(onComplete: (() -> Void)?) {
-        presenterOutput.hideLoading(onComplete: onComplete)
+        presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

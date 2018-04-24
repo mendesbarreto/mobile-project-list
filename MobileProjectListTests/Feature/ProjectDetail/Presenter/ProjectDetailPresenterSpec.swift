@@ -33,7 +33,7 @@ final class ProjectDetailPresenterSpec: QuickSpec {
                     it("should not call show alert view model presenter output") {
                         expect(presenterOutput.invokedShowAlertViewModel).to(beFalse())
                     }
-                    
+
                     it("should call show project view model presenter output") {
                         expect(presenterOutput.invokedShowProjectViewModel).to(beTrue())
                     }

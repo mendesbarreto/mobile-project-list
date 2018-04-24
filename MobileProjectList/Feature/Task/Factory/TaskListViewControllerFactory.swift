@@ -7,6 +7,13 @@ import UIKit
 
 final class TaskListViewControllerFactory {
     static func make(projectId: String) -> UIViewController {
-        return TaskListViewController(projectId: projectId)
+        let presenterInput = TaskListPresenter()
+        let listTaskUseCase = ListTaskUseCaseFactory.make(presenterInput: presenterInput)
+        let viewController = TaskListViewController(projectId: projectId,
+                                                    tableView: UITableView(),
+                                                    listPeopleUseCase: listTaskUseCase,
+                                                    dataSource: TaskListDataSource(taskList: []))
+        presenterInput.setup(presenterOutput: viewController)
+        return viewController
     }
 }

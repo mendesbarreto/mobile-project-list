@@ -12,14 +12,19 @@ import RxCocoa
 final class TaskListViewController: BaseViewController {
 
     private let projectId: String
-    private var listPeopleUseCase: ListTasksUseCase!
-    private let tableView = UITableView()
-    private let dataSource = TaskListDataSource(taskList: [])
+    private let listPeopleUseCase: ListTasksInteractor
+    private let tableView: UITableView
+    private let dataSource: TaskListDataSource
 
-    init(projectId: String) {
+    init(projectId: String,
+         tableView: UITableView,
+         listPeopleUseCase: ListTasksInteractor,
+         dataSource: TaskListDataSource) {
+        self.tableView = tableView
         self.projectId = projectId
+        self.listPeopleUseCase = listPeopleUseCase
+        self.dataSource = dataSource
         super.init()
-        self.listPeopleUseCase = ListTaskUseCaseFactory.make(presenterOutput: self)
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -6,8 +6,7 @@
 import Foundation
 
 final class ListTaskUseCaseFactory {
-    static func make(presenterOutput: TaskListPresenterOutput) -> ListTasksUseCase {
-        let presenter = TaskListPresenter(presenterOutput: presenterOutput)
-        return ListTasksUseCase(taskGateway: TaskMoyaGateway(), presenter: presenter)
+    static func make(presenterInput: TaskListPresenterInput) -> ListTasksUseCase {
+        return ListTasksUseCase(taskGateway: TaskMoyaGateway(), presenter: presenterInput)
     }
 }

@@ -81,8 +81,10 @@
 		B4E3374A8962B292212BA52D /* ProjectListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D12231F4BA9850E848D /* ProjectListViewControllerSpec.swift */; };
 		B4E3375E84D72EFDE2550E09 /* ListTasksUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3329005FA5F4EFF7689E7 /* ListTasksUseCaseSpec.swift */; };
 		B4E337906C1787ACEC211F2E /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C0DDAC3FEEC39196A76 /* ProjectListViewController.swift */; };
+		B4E337D086A47B4BDFDC537E /* ListTasksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E336816B5B4E5EB7277B16 /* ListTasksInteractor.swift */; };
 		B4E3386045EC94BFF9960566 /* TaskGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3387E81C224DF2F8DA9FD /* TaskGateway.swift */; };
 		B4E3387967A4EFFC5DA466DB /* ListTasksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33E330D35C9FFA48AA073 /* ListTasksUseCase.swift */; };
+		B4E33891184FA9712EBC7F62 /* PeopleListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33534409F93ACAA3B3B74 /* PeopleListViewControllerSpec.swift */; };
 		B4E338D0F272B2F23FC6D804 /* PeopleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F9942A15A291EDD2E15 /* PeopleMock.swift */; };
 		B4E339166A8DCA6332CC0123 /* TeamworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E338187DD2DCDD1278BA02 /* TeamworkTargetType.swift */; };
 		B4E3392CEF1EF584013E6D2E /* ProjectListPresenterInputMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D4FCA2BBCC7E9D5B6CF /* ProjectListPresenterInputMock.swift */; };
@@ -103,6 +105,7 @@
 		B4E33A88434CB072C700C8F0 /* ListProjectInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3366C7508F574B097F47B /* ListProjectInteractor.swift */; };
 		B4E33A8F2440B791D5F77365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E337F8E3BF57347EB175C4 /* Assets.xcassets */; };
 		B4E33AD6B002351E842B3CE0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33756F1451E9CF3D3057B /* Person.swift */; };
+		B4E33B1339633EF9585920BF /* ListPeopleInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E337ECD2F6B45C77BEF309 /* ListPeopleInteractorMock.swift */; };
 		B4E33B17FE627952D2014091 /* TaskListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331CE9488702EF3132353 /* TaskListResponse.swift */; };
 		B4E33B29B6F5CDE9BFBC0204 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335B540C461C5C11794AF /* TaskListViewController.swift */; };
 		B4E33B55A87C19EBB41649D4 /* ProjectDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339887C8613070A5EE323 /* ProjectDetailViewModel.swift */; };
@@ -194,6 +197,7 @@
 		B4E333A801C403DC735C04ED /* ProjectDetailPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailPresenterInput.swift; sourceTree = "<group>"; };
 		B4E3342649C930089D0CDDC4 /* BindableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableCell.swift; sourceTree = "<group>"; };
 		B4E3351065228DA03B87F53E /* TaskTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTarget.swift; sourceTree = "<group>"; };
+		B4E33534409F93ACAA3B3B74 /* PeopleListViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewControllerSpec.swift; sourceTree = "<group>"; };
 		B4E3353FEA11A4D0F4D57BEF /* ListProjectUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectUseCase.swift; sourceTree = "<group>"; };
 		B4E3354062EE76549BB57158 /* ProjectResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectResponse.swift; sourceTree = "<group>"; };
 		B4E33560BC7C461EF77AEBF8 /* ProjectListViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 		B4E3363D4F732923B5FF46EF /* ListPeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleInteractor.swift; sourceTree = "<group>"; };
 		B4E33667B7D49C263F275C35 /* ProjectTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTarget.swift; sourceTree = "<group>"; };
 		B4E3366C7508F574B097F47B /* ListProjectInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectInteractor.swift; sourceTree = "<group>"; };
+		B4E336816B5B4E5EB7277B16 /* ListTasksInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTasksInteractor.swift; sourceTree = "<group>"; };
 		B4E336F5AF0B4C3A8A9F0944 /* ProjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectGateway.swift; sourceTree = "<group>"; };
 		B4E337005C3FCE00761A9212 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B4E33706CB968C54B5A116B6 /* ProjectDetailPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailPresenterOutput.swift; sourceTree = "<group>"; };
@@ -219,6 +224,7 @@
 		B4E33760131A9BB3093C7710 /* PeopleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleResponse.swift; sourceTree = "<group>"; };
 		B4E337918964C3FD02323C44 /* ProjectDetailViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E337B969D4727394066B60 /* TaskListPresenterInputMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListPresenterInputMock.swift; sourceTree = "<group>"; };
+		B4E337ECD2F6B45C77BEF309 /* ListPeopleInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleInteractorMock.swift; sourceTree = "<group>"; };
 		B4E337F10F3B953FA3C4566D /* TaskListPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListPresenterSpec.swift; sourceTree = "<group>"; };
 		B4E337F8E3BF57347EB175C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E338187DD2DCDD1278BA02 /* TeamworkTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamworkTargetType.swift; sourceTree = "<group>"; };
@@ -693,6 +699,7 @@
 			children = (
 				B4E330EA97C86D9237AA5624 /* UseCase */,
 				B4E3385BD70607278F8A12E2 /* Presenter */,
+				B4E33ED262F9CA02403186E5 /* Controller */,
 			);
 			path = People;
 			sourceTree = "<group>";
@@ -893,6 +900,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E33E330D35C9FFA48AA073 /* ListTasksUseCase.swift */,
+				B4E336816B5B4E5EB7277B16 /* ListTasksInteractor.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -973,6 +981,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E33F50DBAB039609E65019 /* ListProjectInteractorMock.swift */,
+				B4E337ECD2F6B45C77BEF309 /* ListPeopleInteractorMock.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -986,6 +995,14 @@
 				B4E335073ABF54BE12A6525A /* Controller */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		B4E33ED262F9CA02403186E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33534409F93ACAA3B3B74 /* PeopleListViewControllerSpec.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B4E33EFC977CB8C21FA1C4CC /* Target */ = {
@@ -1327,6 +1344,7 @@
 				B4E330F77FC7F2A078982765 /* ListPeopleInteractor.swift in Sources */,
 				B4E334327A5613990F058056 /* ProjectDetailViewControllerFactory.swift in Sources */,
 				B4E33DD0D68D5D3F82316D12 /* ShowProjectDetailInteractor.swift in Sources */,
+				B4E337D086A47B4BDFDC537E /* ListTasksInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1361,6 +1379,8 @@
 				B4E33EE0DC94C7CCF5988F73 /* ListProjectInteractorMock.swift in Sources */,
 				B4E3374A8962B292212BA52D /* ProjectListViewControllerSpec.swift in Sources */,
 				B4E33CA73985952C4EE988C2 /* UIColorSpec.swift in Sources */,
+				B4E33891184FA9712EBC7F62 /* PeopleListViewControllerSpec.swift in Sources */,
+				B4E33B1339633EF9585920BF /* ListPeopleInteractorMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

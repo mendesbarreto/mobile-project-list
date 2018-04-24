@@ -13,6 +13,7 @@ final class ProjectDetailPresenterOutputMock: ProjectDetailPresenterOutput {
     var invokedShowProjectViewModel = false
     var invokedShowProjectViewModelCount = 0
     var invokedShowProjectViewModelParameters: (projectViewModel: ProjectDetailViewModel, Void)?
+    //swiftlint:disable identifier_name
     var invokedShowProjectViewModelParametersList = [(projectViewModel: ProjectDetailViewModel, Void)]()
 
     func show(projectViewModel: ProjectDetailViewModel) {
