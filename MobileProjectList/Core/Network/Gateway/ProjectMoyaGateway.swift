@@ -28,9 +28,7 @@ final class ProjectMoyaGateway: ProjectGateway {
     func project(byId id: String) -> Single<Project> {
         return provider.rx.request(.project(byId: id))
                           .filterSuccessfulStatusAndRedirectCodes()
-                          .debug()
                           .map(ProjectResponse.self)
-                          .debug("Mapping")
                           .map { $0.project }
                           .observeOn(MainScheduler.instance)
     }
