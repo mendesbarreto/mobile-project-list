@@ -7,9 +7,9 @@ import UIKit
 
 final class ProjectListPresenter: ProjectListPresenterInput {
 
-    private unowned let presenterOutput: ProjectListPresenterOutput
+    private weak var presenterOutput: ProjectListPresenterOutput?
 
-    init(presenterOutput: ProjectListPresenterOutput) {
+    init(presenterOutput: ProjectListPresenterOutput? = nil) {
         self.presenterOutput = presenterOutput
     }
 
@@ -29,7 +29,11 @@ final class ProjectListPresenter: ProjectListPresenterInput {
                                         startImageColor: startImageColor,
                                         tags: tagsViewModels)
         }
-        presenterOutput.show(projects: viewModels)
+        presenterOutput?.show(projects: viewModels)
+    }
+
+    func setup(presenterOutput: ProjectListPresenterOutput) {
+        self.presenterOutput = presenterOutput
     }
 
     private func map(tags: [Tag]) -> [TagViewModel] {
@@ -43,20 +47,20 @@ final class ProjectListPresenter: ProjectListPresenterInput {
     }
 
     func showEmptyState() {
-        presenterOutput.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
+        presenterOutput?.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
                                                                  message: Strings.Alert.ProjectListEmpty.message))
     }
 
     func showError() {
-        presenterOutput.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.Error.title,
+        presenterOutput?.show(alertViewModel: ErrorAlertViewModel(title: Strings.Alert.Error.title,
                                                                  message: Strings.Alert.Error.message))
     }
 
     func showLoading() {
-        presenterOutput.showLoading()
+        presenterOutput?.showLoading()
     }
 
     func hideLoading(onComplete: (() -> Void)?) {
-        presenterOutput.hideLoading(onComplete: onComplete)
+        presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

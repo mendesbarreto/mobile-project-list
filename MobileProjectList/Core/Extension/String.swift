@@ -11,7 +11,7 @@ enum StringUrlError: Error {
 
 extension String {
     func asUrl() throws -> URL {
-        guard let url = try URL(string: self) else {
+        guard let url = URL(string: self) else {
             throw StringUrlError.problemToConvertStringInUrl
         }
         return url

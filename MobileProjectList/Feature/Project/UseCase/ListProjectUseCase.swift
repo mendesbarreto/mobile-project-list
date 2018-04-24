@@ -8,7 +8,7 @@ import RxSwift
 import RxCocoa
 import NSObject_Rx
 
-final class ListProjectUseCase: HasDisposeBag {
+final class ListProjectUseCase: ListProjectInteractor, HasDisposeBag {
 
     private let projectGateway: ProjectGateway
     private let presenter: ProjectListPresenterInput

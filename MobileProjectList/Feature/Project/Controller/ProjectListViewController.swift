@@ -14,14 +14,21 @@ enum ProjectListError: Error {
 
 final class ProjectListViewController: BaseViewController, ProjectListPresenterOutput {
 
-    private var tableView = UITableView()
-    private var listProjectUseCase: ListProjectUseCase!
-    private let dataSource = ProjectListDataSource()
-    private let delegate = ProjectListDelegate()
+    private let tableView: UITableView
+    private let listProjectUseCase: ListProjectInteractor
+    private let dataSource: ProjectListDataSource
+    //swiftlint:disable weak_delegate
+    private let delegate: ProjectListDelegate
 
-    override init() {
+    init(listProjectUseCase: ListProjectInteractor,
+         dataSource: ProjectListDataSource,
+         delegate: ProjectListDelegate,
+         tableView: UITableView) {
+        self.tableView = tableView
+        self.dataSource = dataSource
+        self.delegate = delegate
+        self.listProjectUseCase = listProjectUseCase
         super.init()
-        listProjectUseCase = ListProjectUseCaseFactory.make(presenter: self)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -75,12 +82,11 @@ final class ProjectListViewController: BaseViewController, ProjectListPresenterO
     }
 
     private func onProjectSelected(id: String) {
-        goToUserList(withProjectId: id)
+        goToProjectDetail(withProjectId: id)
     }
 
-    private func goToUserList(withProjectId id: String) {
+    private func goToProjectDetail(withProjectId id: String) {
         navigationController?.pushViewController(ProjectDetailViewController(projectId: id), animated: true)
-        //navigationController?.pushViewController(PeopleViewControllerFactory.make(withProjectId: id), animated: true)
     }
 
     // MARK: ProjectListPresenterOutput

@@ -6,8 +6,7 @@
 import Foundation
 
 final class ListProjectUseCaseFactory {
-    static func make(presenter: ProjectListPresenterOutput) -> ListProjectUseCase {
-        let presenterInput = ProjectListPresenter(presenterOutput: presenter)
+    static func make(presenterInput: ProjectListPresenterInput) -> ListProjectInteractor {
         return ListProjectUseCase(projectGateway: ProjectMoyaGateway(), presenter: presenterInput)
     }
 }
