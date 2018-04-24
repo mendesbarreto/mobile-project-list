@@ -35,6 +35,7 @@
 		B4E330AF499BD1DE5D6ADCF6 /* ProjectListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */; };
 		B4E3311853D60E6A55028BDA /* ProjectListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33AD90AFABA422FD7AF51 /* ProjectListResponse.swift */; };
 		B4E33120FE1653922F4347AA /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CE46C738E9C0E3CC911 /* ProjectDetailViewController.swift */; };
+		B4E3316874D4C5A540BA13D8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3339361E9EFBAE3706199 /* UIColor.swift */; };
 		B4E331919E634D402E1982D5 /* ErrorAlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3374F31F27BE7BDED7D28 /* ErrorAlertViewModel.swift */; };
 		B4E331FD8BEAF00C0E8BB269 /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F4BC4D3B5497C6A1992 /* FontSize.swift */; };
 		B4E332105B9C784CF96073BD /* TaskListViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A81F8C21105635D40AA /* TaskListViewControllerFactory.swift */; };
@@ -116,6 +117,7 @@
 		B4E33C3F7DB95FFC35D2F849 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F7C515FF319B3D37D50 /* TagView.swift */; };
 		B4E33C586F7475768B19A1F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33A9F4BE58461922E6931 /* AppDelegate.swift */; };
 		B4E33C66D92C916A4592D119 /* ShowProjectDetailUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335CC46F011F3D2D389E6 /* ShowProjectDetailUseCaseFactory.swift */; };
+		B4E33CA73985952C4EE988C2 /* UIColorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E335BCEFD0A4AE2FC245BE /* UIColorSpec.swift */; };
 		B4E33CAAAF48409152F02900 /* ProjectDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3370ED4CB83ADDF20A30F /* ProjectDetailPresenter.swift */; };
 		B4E33CD28EF70C328C216A9B /* ProjectListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3320379E82377E3AD951B /* ProjectListPresenterSpec.swift */; };
 		B4E33CEF498A74DE539A649F /* TestErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33F63BDE26A01B151E675 /* TestErrorAPI.swift */; };
@@ -184,6 +186,7 @@
 		B4E33329E2145489B63D617B /* PeopleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
 		B4E33347EC256CB3C2D0AE56 /* TaskViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewCell.swift; sourceTree = "<group>"; };
 		B4E3338814660BE927B264AB /* TagViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		B4E3339361E9EFBAE3706199 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B4E333A801C403DC735C04ED /* ProjectDetailPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailPresenterInput.swift; sourceTree = "<group>"; };
 		B4E3342649C930089D0CDDC4 /* BindableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableCell.swift; sourceTree = "<group>"; };
 		B4E3351065228DA03B87F53E /* TaskTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTarget.swift; sourceTree = "<group>"; };
@@ -191,6 +194,7 @@
 		B4E3354062EE76549BB57158 /* ProjectResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectResponse.swift; sourceTree = "<group>"; };
 		B4E33560BC7C461EF77AEBF8 /* ProjectListViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewControllerFactory.swift; sourceTree = "<group>"; };
 		B4E335B540C461C5C11794AF /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		B4E335BCEFD0A4AE2FC245BE /* UIColorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorSpec.swift; sourceTree = "<group>"; };
 		B4E335CC46F011F3D2D389E6 /* ShowProjectDetailUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectDetailUseCaseFactory.swift; sourceTree = "<group>"; };
 		B4E335FC3D3ED4AC2ADD6E5C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B4E33600C8D8A22D58A7899A /* ListProjectUseCaseFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectUseCaseFactorySpec.swift; sourceTree = "<group>"; };
@@ -354,6 +358,7 @@
 			children = (
 				752799F02082727200465965 /* Info.plist */,
 				B4E333F36CBCC742ECFDF151 /* Feature */,
+				B4E336327EE32CC84A00BBC5 /* Core */,
 			);
 			path = MobileProjectListTests;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 				B4E338E267884F191705C860 /* String.swift */,
 				B4E338B9571A29E58D8A3C63 /* UITableViewCell.swift */,
 				B4E33B2CDB1E1221F5F21E29 /* NSAttributedString.swift */,
+				B4E3339361E9EFBAE3706199 /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -699,6 +705,14 @@
 				B4E33B8DDB072E62081CB268 /* Info.plist */,
 			);
 			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		B4E336327EE32CC84A00BBC5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4E33AEB8495C9A878C205A7 /* Extension */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		B4E33644EA5F4B9EE728CDE0 /* ViewModel */ = {
@@ -873,6 +887,14 @@
 				B4E33E330D35C9FFA48AA073 /* ListTasksUseCase.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4E33AEB8495C9A878C205A7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B4E335BCEFD0A4AE2FC245BE /* UIColorSpec.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		B4E33B229D4F827B08C923BC /* Presenter */ = {
@@ -1292,6 +1314,7 @@
 				B4E332105B9C784CF96073BD /* TaskListViewControllerFactory.swift in Sources */,
 				B4E333386C07FEE2E405AC94 /* ProjectListViewControllerFactory.swift in Sources */,
 				B4E33A88434CB072C700C8F0 /* ListProjectInteractor.swift in Sources */,
+				B4E3316874D4C5A540BA13D8 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1325,6 +1348,7 @@
 				B4E33736A3B53C0D27DAE2DF /* ListProjectUseCaseFactorySpec.swift in Sources */,
 				B4E33EE0DC94C7CCF5988F73 /* ListProjectInteractorMock.swift in Sources */,
 				B4E3374A8962B292212BA52D /* ProjectListViewControllerSpec.swift in Sources */,
+				B4E33CA73985952C4EE988C2 /* UIColorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

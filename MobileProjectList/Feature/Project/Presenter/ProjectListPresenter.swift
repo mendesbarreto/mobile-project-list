@@ -38,7 +38,8 @@ final class ProjectListPresenter: ProjectListPresenterInput {
 
     private func map(tags: [Tag]) -> [TagViewModel] {
         return tags.map { tag in
-            return TagViewModel(title: .titleXSmallWhite(withText: tag.name), backgroundColor: .red, cornerRadios: 5)
+            let color: UIColor = (try? UIColor(string: tag.color) ) ?? .red
+            return TagViewModel(title: .titleXSmallWhite(withText: tag.name), backgroundColor: color, cornerRadios: 5)
         }
     }
 
