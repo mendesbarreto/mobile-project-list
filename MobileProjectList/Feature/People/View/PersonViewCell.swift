@@ -6,7 +6,7 @@
 import UIKit
 import SDWebImage
 
-final class PersonViewCell: BindableCell<PersonViewModel>  {
+final class PersonViewCell: BindableCell<PersonViewModel> {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

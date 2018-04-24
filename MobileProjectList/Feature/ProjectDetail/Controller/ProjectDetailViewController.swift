@@ -37,11 +37,11 @@ final class ProjectDetailViewController: BaseViewController {
     }
 
     private func setupRx() {
-        projectDetailView.onPeopleRequested.emit(onNext:{ [weak self] in
+        projectDetailView.onPeopleRequested.emit(onNext: { [weak self] in
             self?.onPeopleRequested()
         }).disposed(by: disposeBag)
 
-        projectDetailView.onTaskRequested.emit(onNext:{ [weak self] in
+        projectDetailView.onTaskRequested.emit(onNext: { [weak self] in
             self?.onTaskRequested()
         }).disposed(by: disposeBag)
     }

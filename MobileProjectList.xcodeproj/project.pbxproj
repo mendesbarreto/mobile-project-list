@@ -76,7 +76,7 @@
 		B4E336C208594F143598777B /* ListPeopleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339A059D31B4B94E526D7 /* ListPeopleUseCase.swift */; };
 		B4E336F139F03E788D6FFF50 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33C8F1EBE39BC3CA75C56 /* PeopleListViewController.swift */; };
 		B4E336F2F9362D8C06AFC10B /* AlertScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E331FDFE62283C1051D471 /* AlertScreenFactory.swift */; };
-		B4E33736A3B53C0D27DAE2DF /* ListProjectUseCaseFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33600C8D8A22D58A7899A /* ListProjectUseCaseFactorySpec.swift */; };
+		B4E33736A3B53C0D27DAE2DF /* ProjectListViewControllerFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33600C8D8A22D58A7899A /* ProjectListViewControllerFactorySpec.swift */; };
 		B4E3373EC8F24E3F12CD55BE /* ProjectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3354062EE76549BB57158 /* ProjectResponse.swift */; };
 		B4E3374A8962B292212BA52D /* ProjectListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33D12231F4BA9850E848D /* ProjectListViewControllerSpec.swift */; };
 		B4E3375E84D72EFDE2550E09 /* ListTasksUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3329005FA5F4EFF7689E7 /* ListTasksUseCaseSpec.swift */; };
@@ -205,7 +205,7 @@
 		B4E335BCEFD0A4AE2FC245BE /* UIColorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorSpec.swift; sourceTree = "<group>"; };
 		B4E335CC46F011F3D2D389E6 /* ShowProjectDetailUseCaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectDetailUseCaseFactory.swift; sourceTree = "<group>"; };
 		B4E335FC3D3ED4AC2ADD6E5C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		B4E33600C8D8A22D58A7899A /* ListProjectUseCaseFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectUseCaseFactorySpec.swift; sourceTree = "<group>"; };
+		B4E33600C8D8A22D58A7899A /* ProjectListViewControllerFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewControllerFactorySpec.swift; sourceTree = "<group>"; };
 		B4E33612953A9A35787D27B9 /* ShowProjectDetailUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectDetailUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E336370687282FD399395D /* ProjectListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewCell.swift; sourceTree = "<group>"; };
 		B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenterOutput.swift; sourceTree = "<group>"; };
@@ -446,7 +446,7 @@
 		B4E33094A3188D715830AB53 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				B4E33600C8D8A22D58A7899A /* ListProjectUseCaseFactorySpec.swift */,
+				B4E33600C8D8A22D58A7899A /* ProjectListViewControllerFactorySpec.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -1375,7 +1375,7 @@
 				B4E3375E84D72EFDE2550E09 /* ListTasksUseCaseSpec.swift in Sources */,
 				B4E33F85457EE488707FF258 /* TaskMock.swift in Sources */,
 				B4E332ADE6EA9756ED55C157 /* TaskListPresenterSpec.swift in Sources */,
-				B4E33736A3B53C0D27DAE2DF /* ListProjectUseCaseFactorySpec.swift in Sources */,
+				B4E33736A3B53C0D27DAE2DF /* ProjectListViewControllerFactorySpec.swift in Sources */,
 				B4E33EE0DC94C7CCF5988F73 /* ListProjectInteractorMock.swift in Sources */,
 				B4E3374A8962B292212BA52D /* ProjectListViewControllerSpec.swift in Sources */,
 				B4E33CA73985952C4EE988C2 /* UIColorSpec.swift in Sources */,

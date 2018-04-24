@@ -26,7 +26,7 @@ final class PeopleListPresenter: PeopleListPresenterInput {
                                                         message: Strings.Alert.ProjectListEmpty.message))
     }
 
-    func show(list: [Person]) throws  {
+    func show(list: [Person]) throws {
         let viewModels: [PersonViewModel] = try list.map { person in
             let placeHolderImage = Assets.icPlaceHolder.image
             let name = "\(person.firstName) \(person.lastName) at: \(person.companyName)"
