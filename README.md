@@ -8,6 +8,8 @@ Show all of the user's Projects, allow them to choose one, then show some part o
 - Swift 4.1
 - iOS 11.3
 
+## System Architecture
+- [The Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 ## Project Steup
 
