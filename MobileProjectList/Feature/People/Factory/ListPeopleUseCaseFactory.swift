@@ -6,8 +6,7 @@
 import Foundation
 
 final class ListPeopleUseCaseFactory {
-    static func make(presenterOutput: PeopleListPresenterOutput) -> ListPeopleUseCase {
-        let presenter = PeopleListPresenter(presenterOutput: presenterOutput)
-        return ListPeopleUseCase(peopleGateway: PeopleMoyaGateway(), presenter: presenter)
+    static func make(presenterInput: PeopleListPresenterInput) -> ListPeopleInteractor {
+        return ListPeopleUseCase(peopleGateway: PeopleMoyaGateway(), presenter: presenterInput)
     }
 }

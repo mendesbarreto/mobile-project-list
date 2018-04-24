@@ -33,6 +33,7 @@
 		B4E3309715D5D0853F7D7BC7 /* TaskListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33ADAC395C76CA8CCF0A8 /* TaskListPresenterOutput.swift */; };
 		B4E330A501DD25FD475D6250 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E339A91FBB1A83BAF5016E /* Bindable.swift */; };
 		B4E330AF499BD1DE5D6ADCF6 /* ProjectListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */; };
+		B4E330F77FC7F2A078982765 /* ListPeopleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3363D4F732923B5FF46EF /* ListPeopleInteractor.swift */; };
 		B4E3311853D60E6A55028BDA /* ProjectListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33AD90AFABA422FD7AF51 /* ProjectListResponse.swift */; };
 		B4E33120FE1653922F4347AA /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E33CE46C738E9C0E3CC911 /* ProjectDetailViewController.swift */; };
 		B4E3316874D4C5A540BA13D8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3339361E9EFBAE3706199 /* UIColor.swift */; };
@@ -201,6 +202,7 @@
 		B4E33612953A9A35787D27B9 /* ShowProjectDetailUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowProjectDetailUseCaseSpec.swift; sourceTree = "<group>"; };
 		B4E336370687282FD399395D /* ProjectListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewCell.swift; sourceTree = "<group>"; };
 		B4E3363A7EF4097E165069F6 /* ProjectListPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListPresenterOutput.swift; sourceTree = "<group>"; };
+		B4E3363D4F732923B5FF46EF /* ListPeopleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPeopleInteractor.swift; sourceTree = "<group>"; };
 		B4E33667B7D49C263F275C35 /* ProjectTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTarget.swift; sourceTree = "<group>"; };
 		B4E3366C7508F574B097F47B /* ListProjectInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProjectInteractor.swift; sourceTree = "<group>"; };
 		B4E336F5AF0B4C3A8A9F0944 /* ProjectGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectGateway.swift; sourceTree = "<group>"; };
@@ -995,6 +997,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E339A059D31B4B94E526D7 /* ListPeopleUseCase.swift */,
+				B4E3363D4F732923B5FF46EF /* ListPeopleInteractor.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -1315,6 +1318,7 @@
 				B4E333386C07FEE2E405AC94 /* ProjectListViewControllerFactory.swift in Sources */,
 				B4E33A88434CB072C700C8F0 /* ListProjectInteractor.swift in Sources */,
 				B4E3316874D4C5A540BA13D8 /* UIColor.swift in Sources */,
+				B4E330F77FC7F2A078982765 /* ListPeopleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import RxCocoa
 import NSObject_Rx
 import SDWebImage
 
-final class ListPeopleUseCase: HasDisposeBag {
+final class ListPeopleUseCase: ListPeopleInteractor, HasDisposeBag {
 
     private let peopleGateway: PeopleGateway
     private let presenter: PeopleListPresenterInput

@@ -6,19 +6,23 @@
 import Foundation
 
 final class PeopleListPresenter: PeopleListPresenterInput {
-    private unowned let presenterOutput: PeopleListPresenterOutput
+    private weak var presenterOutput: PeopleListPresenterOutput?
 
-    init(presenterOutput: PeopleListPresenterOutput) {
+    init(presenterOutput: PeopleListPresenterOutput? = nil) {
+        self.presenterOutput = presenterOutput
+    }
+
+    func setup(presenterOutput: PeopleListPresenterOutput) {
         self.presenterOutput = presenterOutput
     }
 
     func showError() {
-        presenterOutput.show(alert: ErrorAlertViewModel(title: Strings.Alert.Error.title,
+        presenterOutput?.show(alert: ErrorAlertViewModel(title: Strings.Alert.Error.title,
                                                         message: Strings.Alert.Error.message))
     }
 
     func showEmptyState() {
-        presenterOutput.show(alert: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
+        presenterOutput?.show(alert: ErrorAlertViewModel(title: Strings.Alert.ProjectListEmpty.title,
                                                         message: Strings.Alert.ProjectListEmpty.message))
     }
 
@@ -33,14 +37,14 @@ final class PeopleListPresenter: PeopleListPresenterInput {
                                    isAdmin: person.administrator)
         }
 
-        presenterOutput.show(people: viewModels)
+        presenterOutput?.show(people: viewModels)
     }
 
     func showLoading() {
-        presenterOutput.showLoading()
+        presenterOutput?.showLoading()
     }
 
     func hideLoading(onComplete: (() -> Void)?) {
-        presenterOutput.hideLoading(onComplete: onComplete)
+        presenterOutput?.hideLoading(onComplete: onComplete)
     }
 }

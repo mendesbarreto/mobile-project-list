@@ -12,14 +12,16 @@ import RxCocoa
 final class PeopleListViewController: BaseViewController {
 
     private let projectId: String
-    private var listPeopleUseCase: ListPeopleUseCase!
-    private let tableView = UITableView()
-    private let dataSource = PeopleListDataSource(personList: [])
+    private let listPeopleUseCase: ListPeopleInteractor
+    private let tableView: UITableView
+    private let dataSource: PeopleListDataSource
 
-    init(projectId: String) {
+    init(projectId: String, listPeopleUseCase: ListPeopleInteractor, tableView: UITableView, dataSource: PeopleListDataSource) {
         self.projectId = projectId
+        self.listPeopleUseCase = listPeopleUseCase
+        self.tableView = tableView
+        self.dataSource = dataSource
         super.init()
-        self.listPeopleUseCase = ListPeopleUseCaseFactory.make(presenterOutput: self)
     }
 
     required init?(coder aDecoder: NSCoder) {
