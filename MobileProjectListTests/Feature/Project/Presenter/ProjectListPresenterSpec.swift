@@ -6,6 +6,7 @@
 import Quick
 import RxSwift
 import Nimble
+import UIKit
 
 @testable import MobileProjectList
 
@@ -22,6 +23,18 @@ final class ProjectListPresenterSpec: QuickSpec {
                 }
 
                 context("when show list is called") {
+                    context("with 1 project with invalid tag") {
+                        beforeEach {
+                            try? projectListPresenter.show(list: [ProjectMock.projectInvalidTagColor])
+                        }
+
+                        it("expect tagViewModel color red as default") {
+                            let viewModel = presenterOutput.invokedShowProjectsParameters?.projects.first
+                            let tag = viewModel?.tags.first
+                            expect(tag?.backgroundColor).to(equal(UIColor.red))
+                        }
+                    }
+
                     context("with 2 items") {
                         beforeEach {
                             try? projectListPresenter.show(list: ProjectMock.validProjectList)

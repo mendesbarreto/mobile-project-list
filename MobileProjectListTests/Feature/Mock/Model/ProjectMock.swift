@@ -31,6 +31,18 @@ final class ProjectMock {
                        endDate: "2017-10-12", tags: [Tag]())
     }
 
+    static var projectInvalidTagColor: Project {
+        return Project(id: "1",
+                       company: Company(name: "Bitwise", id: "1"),
+                       starred: false,
+                       name: "Hello world",
+                       description: "Hello", status: "",
+                       category: Category(name: "", id: ""),
+                       startDate: "2017-10-11",
+                       logo: "http//google.com.br/image.jpg",
+                       endDate: "2017-10-12", tags: [Tag(id: "1", name: "API", color: "#ZZZZZZ")])
+    }
+
     static var validProjectList: [Project] {
         return [project1, project2]
     }
