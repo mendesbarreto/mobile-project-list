@@ -11,4 +11,3 @@ struct PersonViewModel {
     let placeHolderImage: UIImage
     let isAdmin: Bool
 }
-
